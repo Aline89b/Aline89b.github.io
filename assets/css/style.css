@@ -7,6 +7,7 @@ body {
   scroll-behavior: smooth;
   font-family: IBM Plex Sans Thai Looped, sans-serif,monospace;
   color: #fff;
+  height:100%;
 }
 
 #menu {
@@ -21,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 100vh;
+  height: 80vh;
   background-image: url(../images/programmer.png);
   background-size: 1fr;
   background-repeat: no-repeat;
