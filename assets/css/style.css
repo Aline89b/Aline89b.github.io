@@ -23,6 +23,9 @@ body {
     margin: -40px;
 =======
   justify-content: center;
+<<<<<<< HEAD
+>>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
+=======
 >>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
   }
 
@@ -101,12 +104,19 @@ body {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  .main-text {
   margin: -5% -10%;
 
  }
 
+=======
+ .main-text {
+  margin: -5% -10%;
+
+ }
+>>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
 =======
  .main-text {
   margin: -5% -10%;
@@ -194,8 +204,11 @@ body {
   #home-btn {
     margin-top: 20%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width:150px;
 =======
+=======
+>>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
     width:200px;
 >>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
     height: 50px;
