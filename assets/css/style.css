@@ -13,7 +13,6 @@ body {
 #menu {
   display: flex;
   text-align: center;
-<<<<<<< HEAD
   justify-content: space-between;
   }
 
@@ -21,12 +20,7 @@ body {
     width:200px;
     height: 200px;
     margin: -40px;
-=======
   justify-content: center;
-<<<<<<< HEAD
->>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
-=======
->>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
   }
 
 /* homepage */
@@ -103,9 +97,6 @@ body {
     text-decoration: underline;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
  .main-text {
   margin: -5% -10%;
 
@@ -116,13 +107,12 @@ body {
   margin: -5% -10%;
 
  }
->>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
-=======
+
  .main-text {
   margin: -5% -10%;
 
  }
->>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
+
 .animation-text {
   margin: 0 10%;
   padding: 10px 20px 20px 10px;
@@ -203,14 +193,8 @@ body {
 
   #home-btn {
     margin-top: 20%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     width:150px;
-=======
-=======
->>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
     width:200px;
->>>>>>> b55c85e02b31691afd8d3f63274b1e752298c5d8
     height: 50px;
     background-color: transparent;
     border: solid #38F00A;
@@ -527,6 +511,4 @@ footer a:hover {
         line-height: 15px;
       }
     }
-    /*background: hsla(92, 85%, 68%, 1);
-
-background: linear-gradient(90deg, hsla(92, 85%, 68%, 1) 0%, hsla(338, 98%, 49%, 1) 100%);
+  
