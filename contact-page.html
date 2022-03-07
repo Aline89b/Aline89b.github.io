@@ -2,14 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width:device-width, initial-scale:1">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="You can reach me by mail or phone if you are looking for a front end developer ready to help you!">
 <link rel="stylesheet" href="assets/css/style.css">
  <title> Contact me if you need a new website</title>
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
   <body>
     <div id="menu">
       <nav>
@@ -24,28 +22,50 @@
              <h2>Fancy a chat?</h2>
              <button id="chat-btn" ><a href="https://wa.me/393283539590"> chat</a></button>
              <h2>Or fill the form below</h2>
-             <form class="contact-form">
+             <form onsubmit="sendEmail(); reset(); return false;" id="contact-form">
                 <label for="first-name"> your first name </label>
-                 <input type="first-name" name="" value=""placeholder=" mario" required><br>
+                 <input type="text" id="first-name" value=""placeholder=" mario" required><br>
                 <label for="second-name"> your surname </label>
-                 <input type="second-name" name="" value=""placeholder=" rossi"><br>
+                 <input type="text" id="second-name" placeholder=" rossi"><br>
                <label for="email"> e-mail </label>
-                <input type="email" name="" value=""placeholder=" mariorossi@gmail.com" required><br>
+                <input type="email" id="email" placeholder=" mariorossi@gmail.com" required><br>
                 <h5>Write down here your message</h5>
-               <label for="text-area"></label>
-                 <textarea name="name" rows="4" cols="26"></textarea>
-               <label for="submit"></label>
+               <label for="message"></label>
+                 <textarea id ="message" rows="4" cols="26"></textarea>
+               <label for="submit-btn"></label>
                  <input id="submit-btn" type="submit" value="Submit">
                </form>
                </div>
                <footer>
                  <div class="social-icons">
                    <a href="https://github.com/AlineGrianti/Aline89b.git"><img class="icon"src="https://img.icons8.com/ios-filled/50/000000/github.png"></a></>
-                   <a href="mailto:a.grianti89@gmail.com"><img class="icon" src="https://img.icons8.com/ios-filled/50/000000/email.png"></a></>
                    <a href="https://wa.me/393283539590"><img class="icon" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png"></a></>
                    <a href="https://it.linkedin.com/in/aline-grianti-32a9a9b7/"><img class="icon" src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"></a></>
                  </div>
-                 <h5>© Aline Grianti - front-end developer <a href="mailto:a.grianti89@gmail.com">a.grianti89@gmail.com</h5>
+                 <h5>© Aline Grianti - front-end developer </h5>
               </footer>
-                </body>
+              <script src= "https://smtpjs.com/v3/smtp.js"></script>
+
+              <script>
+            /*  const submit = document.getElementById("submit-btn");
+              submit.addEventListener("click", sendEmail);*/
+              function sendEmail(){
+                Email.send({
+      SecureToken: "e1434550-63ab-446c-ad55-3956e3324255",
+      /*Host : "smtp.gmail.com",
+      Username : "a.grianti89@gmail.com",
+      Password : "Martina1989",*/
+      To : 'a.grianti89@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New contact from portfolio form",
+      Body : "Name: " + document.getElementById("first-name").value +
+      "<br> Surname: " + document.getElementById("second-name").value +
+      "<br> e-mail: " + document.getElementById("email").value +
+      "<br> message: " + document.getElementById("message").value
+  }).then(
+    message => alert("your message has been sent!thank you for keeping in touch!")
+  );
+}
+</script>
+            </body>
         </html>
