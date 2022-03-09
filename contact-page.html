@@ -8,10 +8,11 @@
  <title> Contact me if you need a new website</title>
  <link rel="icon" type="image/x-icon" href="assets/images/favicon32x32.png">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   </head>
+    </head>
   <body>
     <div id="menu">
-      <img src="assets/images/logoPortfolio.png" alt="logo">
+      <a href="index.html"><img src="assets/images/logoPortfolio.png" alt="logo"></a>
+      <button id = "hamburger-menu" type="button" name="button"><span id="toggle-button"></span></button>
       <nav>
          <ul>
            <li><a href="about-page.html">ABOUT ME</a></li>
@@ -24,16 +25,16 @@
              <h2>Fancy a chat?</h2>
              <button id="chat-btn" ><a href="https://wa.me/393283539590"> chat</a></button>
              <h2>Or fill the form below</h2>
-             <form onsubmit="sendEmail(); reset(); return false;" id="contact-form">
+             <form  id="contact-form">
                 <label for="first-name"> your first name </label>
-                 <input type="text" id="first-name" value=""placeholder=" mario" required><br>
+                 <input type="text" id="first-name" name ="first-name" value=""placeholder="write your name" required><br>
                 <label for="second-name"> your surname </label>
-                 <input type="text" id="second-name" placeholder=" rossi"><br>
+                 <input type="text" id="second-name" name ="second-name" placeholder="write your surname"><br>
                <label for="email"> e-mail </label>
-                <input type="email" id="email" placeholder=" mariorossi@gmail.com" required><br>
+                <input type="email" id="email" name ="email" placeholder="write your mail address" required><br>
                 <h5>Write down here your message</h5>
                <label for="message"></label>
-                 <textarea id ="message" rows="4" cols="26"></textarea>
+                 <textarea id ="message" name ="message" placeholder="text your message" rows="4" cols="26"></textarea>
                <label for="submit-btn"></label>
                  <input id="submit-btn" type="submit" value="Submit">
                </form>
@@ -46,28 +47,13 @@
                  </div>
                  <h5>© Aline Grianti - front-end developer </h5>
               </footer>
-              <script src= "https://smtpjs.com/v3/smtp.js"></script>
-
-              <script>
-            /*  const submit = document.getElementById("submit-btn");
-              submit.addEventListener("click", sendEmail);*/
-              function sendEmail(){
-                Email.send({
-      SecureToken: "e1434550-63ab-446c-ad55-3956e3324255",
-      /*Host : "smtp.gmail.com",
-      Username : "a.grianti89@gmail.com",
-      Password : "Martina1989",*/
-      To : 'a.grianti89@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : "New contact from portfolio form",
-      Body : "Name: " + document.getElementById("first-name").value +
-      "<br> Surname: " + document.getElementById("second-name").value +
-      "<br> e-mail: " + document.getElementById("email").value +
-      "<br> message: " + document.getElementById("message").value
-  }).then(
-    message => alert("your message has been sent!thank you for keeping in touch!")
-  );
-}
-</script>
-            </body>
-        </html>
+              <script type="text/javascript" src="assets/JS/email.js"></script>
+              <script type="text/javascript" src="assets/JS/index.js"></script>
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function () {
+        emailjs.init("72GJLzerfTvMSNpXc");
+      })();
+    </script>
+        </body>
+      </html>
