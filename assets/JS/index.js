@@ -10,12 +10,3 @@ if (nav.style.display === "none") {
   nav.style.display = "none";
 }
 }
-console.log("ciao");
-
-/*
-        function getResponsiveMenu() {
-          const responsiveMenu = document.createElement("div");
-          window.appendChild(responsiveMenu);
-          responsiveMenu.setAttribute("class","responsive");
-
-}*/
