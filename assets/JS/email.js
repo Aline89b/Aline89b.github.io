@@ -12,19 +12,18 @@
             (response) => {
               console.log("yess!Your message has been sent. Thank you for keeping in touch, I'll get back soon!", response.status, response.text);
               openModal();
-              //alert("yess!Your message has been sent. Thank you for keeping in touch, I'll get back soon!");
-            },
+              },
             (error) => {
               console.log("FAILED...", error);
               alert("Ops...something went wrong! try again,please or send a whatsapp!", error);
             }
           );
         });
-
+        //modal for mail sent
         const modal = document.createElement("div");
         const para = document.createElement("p");
         const closeBtn = document.createElement("button");
-        
+
         function openModal() {
         document.body.appendChild(modal);
         modal.setAttribute("class","modal");
@@ -38,8 +37,3 @@
           modal.style.display = "none";
         });
       }
-
-      console.log(openModal());
-
-
-    //  console.log(openModal());
