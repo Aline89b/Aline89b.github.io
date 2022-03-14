@@ -274,6 +274,32 @@ body {
       margin-right: 4px;
       border-radius: 5%;
     }
+    .about-btn {
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       margin-top: 5%;
+   }
+   .about-btn button {
+     width: 180px;
+    height: 5vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #eee;
+    background-color: transparent ;
+    padding: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color 2s, transform 2s ease;
+    cursor:pointer;
+   }
+
+     .about-btn button:hover {
+       background: linear-gradient(45deg,#42047e,#f9035e,#38F00A);
+       transform: scale(1.1);
+
+}
+
 
   .skills-title h2 {
     margin-top: 10%;
@@ -291,6 +317,10 @@ body {
     padding: 20px;
     margin: 5px;
     box-shadow: 0 5px 10px #eee;
+    transition: width 2s ease;
+  }
+  .skills-icon:hover {
+    width: 125px;
   }
 
   /* portfolio-page */
