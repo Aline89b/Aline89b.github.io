@@ -340,6 +340,7 @@ body {
   }
   .frame {
     display: flex;
+    
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -349,6 +350,10 @@ body {
     box-shadow: 0px 3px 10px #eee;
     margin: 10px;
   }
+.frame p {
+  height: 100%;
+}
+  
 
 
   .frame .icon {
